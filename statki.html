@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="piwo_emote.png" type="image/png">
+    <title>☠🏴‍☠️🦜</title>
+    <!-- O! Fajnie ze tutaj zajrzales :D -->
+    <!-- -. .. --. .... - -.-. --- .-. . / -- .. -..- / -....- / .--. --- .-.. ... -.- .. . / ... --.. .- -. - -.-- -->
+
+</head>
+<body>
+    <script>
+        function togglePlayPause() {
+            var audio = document.getElementById("myAudio");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+        function changeVolume() {
+            var audio = document.getElementById("myAudio");
+            var volumeSlider = document.getElementById("volumeSlider");
+            audio.volume = volumeSlider.value;
+        }
+
+        function toggleMute() {
+            var audio = document.getElementById("myAudio");
+            audio.muted = !audio.muted;
+        }
+    </script>
+
+<audio controls loop>
+    <source src="Szanty - Bitwa  lyrics.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+    <script>
+        var volumeSlider = document.getElementById("volumeSlider");
+        var volumeLabel = document.getElementById("volumeLabel");
+
+        volumeSlider.addEventListener("input", function() {
+            volumeLabel.textContent = "Volume: " + Math.round(volumeSlider.value * 100) + "%";
+        });
+    </script>
+</body>
+</html>
