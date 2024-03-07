@@ -1,0 +1,15 @@
+body {
+    background-image: url(piraci.jpg);
+    margin: 0;
+    display: flex;
+    font-family: 'Minecraft', sans-serif;
+    align-items: center; /* Centrowanie elementów na osi X */
+    justify-content: center; /* Centrowanie elementów na osi Y */
+    height: 100vh; /* Wysokość okna przeglądarki */
+}
+
+
+
+p {
+    color: white; 
+}
