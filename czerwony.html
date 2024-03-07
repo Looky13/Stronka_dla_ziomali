@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <link rel="icon" href="piwo_emote.png" type="image/png">
+    <style>
+        body {
+            background-image: url("korytarz.png");
+            font-family: 'Minecraft';
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100vh;
+        }
+
+        .arrow-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0 10px;
+            overflow: hidden;
+        }
+
+        .arrow-button img {
+            width: 100px; 
+            height: 100px;
+            transform: scale(1.2);
+            transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+        }
+
+
+        .arrow-button:hover img {
+            transform: scale(1.4) rotate(0deg);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+    <title>LABIRYNT</title>
+</head>
+<body>
+
+    <a href="niebieski.html" class="arrow-button">
+        <img src="strzalkalewo.png" alt="Strzałka">
+      </a> 
+      <a href="zielony.html" class="arrow-button">
+        <img src="strzalkagora.png" alt="Strzałka">
+      </a>
+      <a href="pomaranczowy.html" class="arrow-button">
+        <img src="strzalka.png" alt="Strzałka">
+      </a>
+      
+
+</body>
+</html>
